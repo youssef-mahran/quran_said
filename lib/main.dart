@@ -1,9 +1,10 @@
+import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'screens/home_page.dart';
+void main() => runApp(
+  DevicePreview(enabled: true, builder: (context) => QuranApp(),),
+);
 
-void main() {
-  runApp(const QuranApp());
-}
 class QuranApp extends StatelessWidget {
   const QuranApp({super.key});
 
